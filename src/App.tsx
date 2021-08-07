@@ -1,12 +1,12 @@
 import React from 'react';
-import { GlobalStyles } from './Styles.js';
+import { GlobalStyles } from './styles';
 
 function App(): JSX.Element {
   return (
     <>
       <GlobalStyles />
       <h3>
-        Project Skeleton
+        Project Skelton
       </h3>
     </>
   );
