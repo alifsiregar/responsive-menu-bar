@@ -1,12 +1,14 @@
 import React from 'react';
+import { GlobalStyles } from './Styles.js';
 
 function App(): JSX.Element {
   return (
-    <div>
-      <h1>
+    <>
+      <GlobalStyles />
+      <h3>
         Project Skeleton
-      </h1>
-    </div>
+      </h3>
+    </>
   );
 }
 
