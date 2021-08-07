@@ -1,6 +1,8 @@
-import About from './pages/About';
-import Home from './pages/Home';
-import Products from './pages/Products';
+import {
+  Home,
+  About,
+  Products,
+} from './pages';
 
 export const routes = [
   {
