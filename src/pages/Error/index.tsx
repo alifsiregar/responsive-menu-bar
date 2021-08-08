@@ -3,9 +3,13 @@ import { Container } from './styles';
 
 const Error = (): JSX.Element => (
   <Container>
-    <h3>
-      Error 404 Page Not Found :(
-    </h3>
+    <h6>
+      Error 404
+      {' '}
+      <br />
+      {' '}
+      Page Not Found :(
+    </h6>
   </Container>
 );
 
