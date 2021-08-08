@@ -6,7 +6,7 @@ import {
   DesktopMenu,
   MenuItems,
   MobileNav,
-  MobileMenuToggle,
+  MobileMenuClose,
   MenuClose,
   MobileMenuItems,
 } from './styles';
@@ -34,9 +34,9 @@ const Navbar = (): JSX.Element => {
         </DesktopMenu>
       </Nav>
       <MobileNav isActive={showNav}>
-        <MobileMenuToggle>
+        <MobileMenuClose>
           <MenuClose onClick={toggleMenu} />
-        </MobileMenuToggle>
+        </MobileMenuClose>
         { NavbarItems.map((item):JSX.Element => (
           <MobileMenuItems onClick={toggleMenu} exact={item.exact} to={item.path}>
             {item.name}

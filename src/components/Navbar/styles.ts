@@ -68,7 +68,7 @@ export const MobileNav = styled.div<{isActive:boolean}>`
     transition: 750ms;
 `;
 
-export const MobileMenuToggle = styled.div`
+export const MobileMenuClose = styled.div`
     background-color: #18191A;
     width: 100%;
     height: 80px;
