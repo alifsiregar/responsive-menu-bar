@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container } from './styles';
 
 const About = (): JSX.Element => (
-  <div>
-    <h1>
+  <Container>
+    <h3>
       About Page
-    </h1>
-  </div>
+    </h3>
+  </Container>
 );
 
 export default About;

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container } from './styles';
 
 const Home = (): JSX.Element => (
-  <div>
-    <h1>
+  <Container>
+    <h3>
       Home Page
-    </h1>
-  </div>
+    </h3>
+  </Container>
 );
 
 export default Home;

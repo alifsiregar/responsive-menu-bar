@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container } from './styles';
 
 const Products = (): JSX.Element => (
-  <div>
-    <h1>
+  <Container>
+    <h4>
       Products Page
-    </h1>
-  </div>
+    </h4>
+  </Container>
 );
 
 export default Products;
