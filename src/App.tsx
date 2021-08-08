@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import { GlobalStyles } from './styles';
 import { routes } from './routes';
-import Error from './pages/Error';
+import { Error } from './pages';
 import Navbar from './components/Navbar';
 
 function App(): JSX.Element {
