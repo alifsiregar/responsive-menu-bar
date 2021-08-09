@@ -28,10 +28,8 @@ export const MenuBar = styled(FaIcons.FaBars)`
 `;
 
 export const DesktopMenu = styled.div`
-    width: 30rem;
-    margin-left: 2rem;
+    width: 25rem;
     color: #ffffff;
-    display: flex;
     justify-content: space-between;
     display: none;
 
@@ -45,8 +43,6 @@ export const MenuItems = styled(NavLink)`
     border-radius: 0.25rem;
     color: #ffffff;
     text-decoration: none;
-    align-items: center;
-    justify-content: center;
 
     &:hover {
         background-color: #1a83ff;
@@ -66,6 +62,10 @@ export const MobileNav = styled.div<{isActive:boolean}>`
     position: fixed;
     top: ${({ isActive }) => (isActive ? '0%' : '-200%')};
     transition: 750ms;
+
+    @media only screen and (min-width: 660px) {
+        display: none;
+    }
 `;
 
 export const MobileMenuClose = styled.div`
@@ -89,7 +89,6 @@ export const MobileMenuItems = styled(NavLink)`
     justify-content: center;
     align-items: center;
     margin: 8px 16px 8px 16px;
-    list-style: none;
     height: 45px;
     text-decoration: none;
     color: #ffffff;
