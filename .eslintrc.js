@@ -46,6 +46,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
+    'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
   },
   settings: {
     'import/resolver': {
