@@ -24,7 +24,7 @@ jobs:
         run: npm test
 
       - name: Run ESLint
-        run: npx eslint src/*
+        run: npx eslint src/* --no-error-on-unmatched-pattern
 
       - name: Build Project
         run: npm run build
