@@ -12,7 +12,7 @@ function App(): JSX.Element {
   return (
     <>
       <GlobalStyles />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Switch>
           {routes.map((route) => (
