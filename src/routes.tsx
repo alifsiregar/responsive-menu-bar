@@ -2,6 +2,7 @@ import {
   Home,
   About,
   Products,
+  Error,
 } from './pages';
 
 export const routes = [
@@ -22,5 +23,11 @@ export const routes = [
     path: '/products',
     exact: false,
     component: Products,
+  },
+  {
+    // route for 404 error page
+    name: 'Error',
+    exact: false,
+    component: Error,
   },
 ];
