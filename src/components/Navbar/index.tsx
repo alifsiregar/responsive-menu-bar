@@ -22,12 +22,12 @@ const Navbar = (): JSX.Element => {
 
   return (
     <>
-      <Nav>
+      <Nav title="Navbar">
         <NavLogo src={aeLogo} />
         <MenuBar onClick={toggleMenu} />
         <DesktopMenu>
           { NavbarItems.map((item):JSX.Element => (
-            <MenuItems exact={item.exact} to={item.path}>
+            <MenuItems key={item.name} exact={item.exact} to={item.path}>
               {item.name}
             </MenuItems>
           )) }
@@ -38,7 +38,7 @@ const Navbar = (): JSX.Element => {
           <MenuClose onClick={toggleMenu} />
         </MobileMenuClose>
         { NavbarItems.map((item):JSX.Element => (
-          <MobileMenuItems onClick={toggleMenu} exact={item.exact} to={item.path}>
+          <MobileMenuItems key={item.name} onClick={toggleMenu} exact={item.exact} to={item.path}>
             {item.name}
           </MobileMenuItems>
         )) }
